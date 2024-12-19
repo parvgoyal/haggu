@@ -1,0 +1,632 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Chivo:ital,wght@0,100..900;1,100..900&family=Cutive&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Montagu+Slab:opsz,wght@16..144,100..700&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Syne:wght@400..800&display=swap"); * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.page1 {
+    height: fit-content;
+    width: 100%;
+}
+
+nav {
+    padding: 0.7vw 3vw 0.5vw 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .left h2 {
+    font-size: 2.7vw;
+    font-weight: 400;
+    font-family: "Space Mono";
+}
+
+nav .left h2:hover {
+    color: rgb(20, 19, 20);
+    cursor: pointer;
+}
+
+nav .right {
+    font-family: "Space Mono";
+    display: flex;
+    list-style-type: none;
+    gap: 1.6vw;
+}
+
+nav .right li {
+    font-family: "Space Mono";
+    font-size: 1.5vw;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+nav .right li:hover {
+    border-bottom: 2px solid rgb(214, 164, 0);
+}
+
+.hero {
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-family: "Space Mono";
+    margin-top: 5vw;
+    text-align: center;
+    font-size: 7.8vw;
+    width: 80%;
+    letter-spacing: -0.4vw;
+    line-height: 7.8vw;
+    transition: 0.5s ease-in;
+}
+
+.hero img {
+    margin-top: 2.8vw;
+    height: 47vw;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid {
+    columns: 3;
+    column-gap: 2.22vw;
+    padding: 2vw;
+}
+
+#grid-item {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 2.22vw;
+}
+
+.grid div img {
+    width: 30.8vw;
+}
+
+.grid div .p1 {
+    font-size: 1.38vw;
+    font-weight: 700;
+    line-height: 1.38vw;
+    margin: 0px;
+    font-family: "Space Mono";
+}
+
+.grid div .p2 {
+    font-family: "Space Mono";
+    font-size: 1.18vw;
+    font-weight: 200;
+    line-height: 1.18vw;
+    margin: 0.2vw 0px 0px;
+}
+
+.page3 {
+    padding: 8vw 3vw;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page3 h1 {
+    width: 68%;
+    text-align: center;
+    font-family: "Space Mono";
+    font-weight: 900;
+    font-size: 3vw;
+    line-height: 3vw;
+}
+
+.page4 {
+    height: fit-content;
+    width: 100%;
+    padding: 8vw 3vw;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.services h1 {
+    font-size: 1.8vw;
+    font-weight: 700;
+    font-family: "Space Mono";
+}
+
+.graphics {
+    display: flex;
+    gap: 13vw;
+    margin-right: 10vw;
+}
+
+.graphics h3 {
+    text-align: left;
+    font-family: "Space Mono";
+    font-size: 1.4vw;
+    line-height: 2.4vw;
+    font-weight: 700;
+}
+
+.page5 {
+    padding-top: 8vw;
+    margin-top: 2vw;
+    height: auto;
+    width: 100%;
+}
+
+.page5 h2 {
+    font-size: 3.1vw;
+    font-family: "Space Mono";
+    font-weight: 700;
+    letter-spacing: -0.01vw;
+    text-align: center;
+    padding-bottom: 3vw;
+}
+
+.review {
+    padding: 0px 2.8vw;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    gap: 2.3vw;
+    overflow-x: scroll;
+    justify-content: space-between;
+}
+
+.review::-webkit-scrollbar {
+    display: none;
+}
+
+.client {
+    height: 16vw;
+    width: calc(24% - 1.15vw);
+    background-color: rgba(114, 99, 49, 0.09);
+    padding: 1.6vw;
+    flex-shrink: 0;
+    flex-grow: 0;
+    transition: scale 0.4s ease-in;
+}
+
+.user-detail {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+.user-detail img {
+    border-radius: 50%;
+    height: 3vw;
+    object-fit: cover;
+}
+
+.user-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name h5 {
+    font-size: 1vw;
+    line-height: 1.6vw;
+    font-weight: 700;
+    color: rgb(40, 37, 27);
+    font-family: "Space Mono";
+}
+
+.user-name p {
+    font-family: "Space Mono";
+    font-size: 1vw;
+    font-weight: 400;
+    color: rgba(46, 40, 20, 0.62);
+    padding-bottom: 1vw;
+}
+
+#experience {
+    margin-left: 1.6vw;
+    margin-top: 1.5vw;
+    font-family: "Space Mono";
+    padding-left: 2vw;
+    border-left: 2px solid rgba(108, 107, 107, 0.43);
+    font-size: 1.5vw;
+    color: rgb(40, 37, 27);
+}
+
+.sp {
+    height: 18vw;
+}
+
+.page6 {
+    padding: 20vw 3vw;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(rgb(255, 255, 255), rgba(106, 83, 6, 0.16));
+}
+
+.page6 h1 {
+    font-size: 4vw;
+    font-weight: 700;
+    font-family: "Space Mono";
+}
+
+.page6 h4 {
+    font-size: 1.6vw;
+    font-weight: 600;
+    font-family: "Space Mono";
+}
+
+.page6 button {
+    margin-top: 2.5vw;
+    background: rgb(214, 164, 0);
+    font-family: "Space Mono";
+    font-size: 1.1vw;
+    padding: 0.5vw 1.8vw;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background 0.6s ease-in-out;
+}
+.page6 button:hover{
+    background: rgb(251, 212, 87);
+}
+
+.page7 {
+    padding: 6vw;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page7 p {
+    text-align: center;
+    font-size: 2.1vw;
+    font-weight: 700;
+    font-family: "Space Mono";
+}
+
+.page7 .input {
+    margin-top: 2vw;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7vw;
+    margin-bottom: 2vw;
+}
+
+.page7 .input input {
+    background-color: rgba(114, 99, 49, 0.09);
+    width: 30vw;
+    height: 2.8vw;
+    text-align: left;
+    font-size: 0.9vw;
+    font-family: "Space Mono";
+    padding: 0.6vw;
+    font-weight: 700;
+}
+
+.page7 .input button {
+    background-color: rgb(214, 164, 0);
+    border: none;
+    font-size: 1.2vw;
+    padding: 0.5vw 2vw;
+    font-family: "Space Mono";
+    border-radius: 0.2vw;
+    font-weight: 700;
+}
+
+.page7 .input button:hover {
+    background-color: rgb(214, 164, 0);
+    color: white;
+}
+
+.page7 .socials {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 1vw;
+}
+
+.page7 .socials i {
+    scale: 2;
+}
+
+#facebook, #insta, #x {
+    font-size: 3.5vw;
+}
+
+#x:hover {
+    color: rgb(214, 164, 0);
+}
+
+#facebook:hover {
+    color: rgb(214, 164, 0);
+}
+
+#insta:hover {
+    color: rgb(214, 164, 0);
+}
+
+.page8 {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8vw 3vw;
+}
+
+.page8 h1 {
+    font-family: "Space Mono";
+    font-size: 1.8vw;
+}
+
+form label {
+    font-family: "Space Mono";
+    font-size: 0.8vw;
+    font-weight: 700;
+}
+
+form input {
+    background-color: rgba(114, 99, 49, 0.09);
+    font-family: "Space Mono";
+    padding: 0.3vw 0.8vw;
+    margin-bottom: 0.7vw;
+    width: 29vw;
+    font-weight: 700;
+}
+
+form button {
+    background-color: rgb(102, 78, 0);
+    font-family: "Space Mono";
+    border: none;
+    color: rgba(255, 255, 255, 0.682);
+    padding: 0.4vw 0.8vw;
+    font-size: 1vw;
+    font-weight: 700;
+    transition: 0.6s ease-out;
+}
+
+form button:hover {
+    scale: 1.1;
+    background: rgb(214, 164, 0);
+    color: rgb(40, 37, 27);
+}
+
+footer {
+    padding: 6vw 3vw 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h3 {
+    font-size: 1.8vw;
+    font-weight: 400;
+    font-family: "Space Mono";
+    color: rgba(46, 40, 20, 0.62);
+}
+
+footer button {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 0.5vw 1vw;
+    font-size: 1.4vw;
+    font-weight: 700;
+    transition: o 0.5s ease-in-out;
+}
+
+footer button:hover {
+    background-color: rgb(214, 164, 0);
+}
+
+@media (max-width: 460px) {
+    nav {
+        padding: 0.9vw 3vw 0.8vw 2vw;
+    }
+
+    nav .left h2 {
+        font-size: 4.2vw;
+    }
+
+    nav .right li {
+        font-size: 2.8vw;
+    }
+
+    .hero h1 {
+        margin-top: 7vw;
+        text-align: center;
+        font-size: 9.8vw;
+    }
+
+    .page3 {
+        padding: 9vw 3vw;
+    }
+
+    .page3 h1 {
+        width: 75%;
+    }
+
+    .services h1 {
+        font-size: 2.8vw;
+    }
+
+    .graphics h3 {
+        font-size: 1.8vw;
+        line-height: 2.4vw;
+    }
+
+    .page5 {
+        margin-bottom: 5vw;
+        margin-top: 2vw;
+    }
+
+    .client {
+        height: 18vw;
+        width: 25%;
+    }
+
+    .user-detail img {
+        height: 4vw;
+    }
+
+    .user-name h5 {
+        font-size: 1.3vw;
+    }
+
+    .sp {
+        height: 18vw;
+    }
+
+    .page6 h1 {
+        font-size: 4vw;
+        font-weight: 700;
+        font-family: "Space Mono";
+    }
+
+    .page6 h4 {
+        font-size: 1.6vw;
+        font-weight: 600;
+        font-family: "Space Mono";
+    }
+
+    .page6 button {
+        font-family: "Space Mono";
+        font-size: 1.9vw;
+    }
+
+    .page7 {
+        padding: 8vw;
+    }
+
+    .page7 p {
+        font-size: 2.9vw;
+    }
+
+    .page7 .input input {
+        height: 3.8vw;
+        text-align: left;
+        font-size: 1.5vw;
+    }
+
+    .page7 .input button {
+        font-size: 1.8vw;
+        padding: 0.5vw 2vw;
+    }
+
+    #facebook, #insta, #x {
+        font-size: 5.5vw;
+    }
+
+    .page8 h1 {
+        font-size: 3.8vw;
+        margin-bottom: 2vw;
+        border-bottom: 2px solid black;
+    }
+
+    form label {
+        font-size: 2.8vw;
+    }
+
+    form input {
+        width: 39vw;
+    }
+
+    form button {
+        padding: 0.4vw 1.1vw;
+        font-size: 2vw;
+    }
+
+    footer h3 {
+        font-size: 2.8vw;
+    }
+
+    footer button {
+        font-size: 2.4vw;
+    }
+}
+
+@media (max-width: 960px) {
+    .card {
+        height: auto;
+        width: 48%;
+        margin-bottom: 1vw;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    nav .left h2 {
+        font-size: 1.8vw;
+    }
+
+    nav .right li {
+        font-size: 3.8vw;
+    }
+
+    .grid {
+        padding-top: 2.22vw;
+        columns: 2;
+        column-gap: 3vw;
+    }
+
+    .grid div img {
+        width: 100%;
+        border-radius: 3.88vw;
+    }
+
+    .grid div .p1 {
+        font-family: Archivo;
+        font-size: 2.5vw;
+        font-weight: 500;
+        line-height: 3vw;
+    }
+
+    .grid div .p2 {
+        font-family: Archivo;
+        font-size: 2vw;
+        font-weight: 200;
+        line-height: 2vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        padding-top: 2.22vw;
+        columns: 1;
+        column-gap: 2.22vw;
+    }
+
+    .grid div img {
+        width: 100%;
+        border-radius: 1.88vw;
+    }
+
+    .grid div .p1 {
+        font-family: Archivo;
+        font-size: 3.8vw;
+        font-weight: 500;
+        line-height: 4vw;
+    }
+
+    .grid div .p2 {
+        font-family: Archivo;
+        font-size: 2.7vw;
+        font-weight: 200;
+        line-height: 2.7vw;
+    }
+}
